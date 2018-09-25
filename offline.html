@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="format-detection" content="telephone=no" />
+      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="fonts.css">
+      <link rel="stylesheet" type="text/javascript" href="js/init.js">
+      <link href="images/icone.png" rel="icon" sizes="200x200">
+      <!--<meta http-equiv="Cache-control" content="no-cache">-->
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" charset="utf-8">
+    // Wait for Cordova to load
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is loaded and it is now safe to make calls Cordova methods
+    function onDeviceReady() {
+        alerta();
+    }
+
+ function alerta() {
+                navigator.notification.alert(
+                    'Para acessar este site você precisa de conexão com a internet!Por favor tente novamente',
+                    function(){},
+                    'Sem Conexão',
+                    'Fechar'
+                );
+            }
+
+    </script>
+    </head>
+
+    <body class="layout2">
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+            
+      <main class="container">
+        <div class="row" align="center">
+          <div class="grid-example col s12" style="margin-top:0">
+            <img class="animated flipInX" src="images/semconexao.jpg" alt="logo" title="Logo do app" width="200" height="200" ;/>
+          </div>
+       </div>
+        <div class="row" align="center">
+          <div class="grid-example col s12" style="margin-top: 5%;">
+            <img class="animated flipInX" src="images/logo.png" alt="logo" title="Logo do app" width="200" height="200" ;/>
+          </div>
+       </div>
+
+    <div class="row" align="center">
+      <div class="grid-example col s12" style="margin-top: 5%;">
+        <!--<button href="quemsomos.html" class="btn waves-effect waves-light" style="width: 100%;">Entrar</button>-->
+        <div class="animated bounceInUp" ><a href ="index.html" target="_self" class="waves-effect waves-light btn" style="width:100%;">TENTAR NOVAMENTE</a></div>
+        </div>
+      
+    </div>
+  </main>
+
+
+    </body>
+  </html>
