@@ -122,9 +122,9 @@ button{
     top: 50%;
     left: 50%;
     width: 500px;
-    height: 400px;
+    height: 500px;
     margin-left: -250px;
-    margin-top: -200px;
+    margin-top: -250px;
     text-align: center;
   /*background-image: url('../img/astro.png');*/
 }
