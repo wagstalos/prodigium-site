@@ -142,7 +142,7 @@ button{
 
 .cd-scroll-down {
     position: absolute;
-    left: 49%;
+    left: calc(50% + -20px);
     right: auto;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -150,8 +150,8 @@ button{
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: 20px;
-    width: 38px;
-    height: 44px;
+    width: 40px;
+    height: 25px;
     background: url(../img/down-arrow.svg) no-repeat center center;
     -webkit-transform:rotate(180deg) ; 
     -moz-transform:rotate(180deg) ; 
